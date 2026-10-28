@@ -1,7 +1,7 @@
 Name:		grommunio-dav
-Version:	1.7
+Version:	1.9
 Release:	1
-Source0:	https://github.com/grommunio/grommunio-dav/releases/download/%{version}/grommunio-dav-%{version}.tar.zst
+Source0:	https://github.com/grommunio/grommunio-dav/archive/refs/tags/%{version}.tar.gz#/grommunio-dav-%{version}.tar.gz
 # Composer production deps (sabre/dav, monolog, psr/log); no network at build time
 Source1:	grommunio-dav-%{version}-vendor.tar.zst
 Summary:	CalDAV and CardDAV interface for grommunio
@@ -23,7 +23,7 @@ Requires:	php-pdo_sqlite
 Requires:	php-sqlite3
 Requires:	php-xmlreader
 Requires:	php-xmlwriter
-Requires:	grommunio-mapi-header-php
+Requires:	grommunio-mapi-header-php >= 2.3
 Requires:	gromox
 Requires:	nginx
 
